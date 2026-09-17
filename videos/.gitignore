@@ -1,0 +1,27 @@
+# 视频工程文件：本地保留、不入库
+# 仓库只发布「成片 + 台账」：renders/final.mp4 与 BRIEF.md / SCRIPT.md /
+# STORYBOARD.md / frame.md / audio_meta.json（这些已跟踪，不受下面规则影响）。
+
+# 帧源码与工程脚手架
+**/compositions/
+**/index.html
+**/hyperframes.json
+**/meta.json
+**/package.json
+**/package-lock.json
+**/AGENTS.md
+**/CLAUDE.md
+**/capture/
+**/audio_request.json
+**/audio_engine_meta.json
+
+# 素材与依赖（字体、配音 wav、章鱼 IP、GSAP 本地副本）
+**/assets/
+**/vendor/
+
+# 中间产物与构建缓存
+**/.hyperframes/
+**/.media/
+**/snapshots/
+**/renders/*
+!**/renders/final.mp4
